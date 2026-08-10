@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estilizando</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            background-color: black;
+            border: solid black 1px;
+        }        
+        .botao{
+            border: solid black 1px;
+            text-align: center;
+            width: 300px;
+            padding: 20PX;
+            border-radius: 15px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .botao:hover{
+            background-color: orange;
+            transform: scale(1.1);
+            transition-duration: 2s;
+        }
+        .botao1{
+            background-color: dodgerblue;
+        }
+        .botao2{
+            background-color: olivedrab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p class="botao botao1">BOTÃO 1</p>
+       <p class="botao botao2">BOTÃO 2</p>
+    </div>
+</body>
+</html>

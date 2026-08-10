@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Pepe Chocolates</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 1px;
+            border: solid black 5px
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to right, #A95A2E, #F1D289);
+        }
+
+        .menu div {
+            align-content: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .menu div:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        h1 {
+            text-align: center;
+            color: #F4952C;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input[type=text] {
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        textarea {
+            width: 71.5%;
+            padding: 5px;
+            border-radius: 5px;
+            color: black;
+            border: solid 2px;
+            display: flex;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input[type=submit] {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 5px;
+            display: flex;
+            width: 23.5%;
+            justify-content: center;
+            cursor: pointer;
+            background-color: #F4952C;
+            color: white;
+        }
+
+        input[type=submit]:hover {
+            transform: scale(1.02);
+            transition-duration: 0.5s;
+        }
+
+        input[type=reset] {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 5px;
+            display: flex;
+            width: 23.5%;
+            justify-content: center;
+            cursor: pointer;
+            background-color: #F4952C;
+            color: white;
+            margin-left: 10px;
+        }
+
+        input[type=reset]:hover {
+            transform: scale(1.02);
+            transition-duration: 0.5s;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        hr {
+            border: solid #F4952C;
+            border-radius: 10px;
+        }
+
+        .org {
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            font-weight: bold;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Login | Cadastrar</p>
+        <p>(027) 9 8162 0016 | contato@pepechocolates.com.br</p>
+    </header>
+    <div class="menu">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="empresa.html">A EMPRESA</a></div>
+        <div><a href="loja.html">LOJA</a></div>
+        <div><a href="blog.html">BLOG</a></div>
+        <div><a href="contato.html">CONTATO</a></div>
+    </div>
+    <h1>Entre em contanto conosco!</h1>
+    <h1>É sempre um prazer ajudar ;)</h1>
+    <hr>
+    <br>
+    <form>
+        Nome: <input type="text" name="nome" size="50" placeholder="Digite seu nome" max>
+        <br>
+        Email: <input type="text" name="email" size="50" placeholder="Digite seu email">
+        <br>
+        Telefone: <input type="text" name="cel" size="50" placeholder="Digite seu telefone">
+        <br><br>
+        <form>
+            <textarea rows="5" cols="50" placeholder="Descreva sua necessidade!"></textarea>
+        </form>
+        <br>
+        <div class="flex">
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" name="apagar" value="Apagar">
+        </div>
+    </form>
+</body>
+
+</html>

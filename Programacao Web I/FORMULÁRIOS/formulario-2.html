@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <style>
+        .p{
+            background-color: #CC9900;
+        }
+    </style>
+</head>
+<body>
+    <p class="p">SISTEMA DE GESTAO ACADÊMICA</p>
+    <p>MANUTENÇÃO DE USUÁRIOS DO SITEMA INTERNO</p>
+
+    <div>Login <input type="text"></div> 
+    <div>Senha <input type="text"></div> 
+
+    <div>Status
+        <select name="status">
+            <option value="1">Inativo</option>
+            <option value="2">Ativo</option>
+        </select>
+    </div>
+
+    <div>Tipo
+        <input type="radio">Técnico
+        <input type="radio">Professor
+        <input type="radio">Aluno
+    </div>
+
+    <div>Data de criação <input type="text"></div> 
+
+    <div>Perfil
+        <input type="radio">Convidado
+        <input type="radio">Administrador
+    </div>
+
+    <div>Observações
+        <textarea name="obs" cols="30" rows="10" ></textarea>
+    </div>
+
+    <div>Módulos
+        <input type="checkbox">Compras
+        <input type="checkbox">Biblioteca
+        <input type="checkbox">Acadêmico
+        <input type="checkbox">Documentação
+        <input type="checkbox">Recursos Humanos
+    </div>
+
+    <div>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Excluir">
+    </div>
+</body>
+</html>

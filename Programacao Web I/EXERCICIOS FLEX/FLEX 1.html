@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        header, footer{
+            background-color: #1F90FF;
+            color: white;
+            text-align: center;
+            height: 30px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: #ADD8E6;
+            text-align: center;
+            margin: 6px;
+            flex: 1;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Cabeçalho
+    </header>
+    <div class="container">
+        <div class="item">Coluna 1</div>
+        <div class="item">Coluna 2</div>
+        <div class="item">Coluna 3</div>
+    </div>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Pepe Chocolates</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 1px;
+            border: solid black 5px;
+            justify-content: space-between;
+        }
+
+        body,
+        header {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to right, #A95A2E, #F1D289);
+        }
+
+        .menu div {
+            align-content: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .menu div:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        a {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .container div {
+            background-color: #F2F1EC;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .container div:hover {
+            background-color: #F4952C;
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 500ms;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .container p {
+            text-align: center;
+        }
+
+        .display {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .botao {
+            border: solid #F2F1EC 1px;
+            text-align: center;
+            width: 100px;
+            padding: 20px;
+            border-radius: 200px;
+            background-color: #8B3C13;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #DD8D38;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .tit {
+            color: #DD8D38;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .tit2 {
+            color: #A95A2E;
+            font-size: large;
+        }
+
+        .o2 {
+            list-style-type: square;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .org {
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Login | Cadastrar</p>
+        <p>(027) 9 8162 0016 | contato@pepechocolates.com.br</p>
+    </header>
+    <div class="menu">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="empresa.html">A EMPRESA</a></div>
+        <div><a href="loja.html">LOJA</a></div>
+        <div><a href="blog.html">BLOG</a></div>
+        <div><a href="contato.html">CONTATO</a></div>
+    </div>
+    <!--CONTEUDO-->
+
+    <div class="tit">Veja as nossas postagens!</div>
+
+    <div class="container">
+        <div>
+            <img src="https://pepechocolates.com.br/wp-content/uploads/2021/03/bolo-de-chocolate-com-recheio-de-ninho-730x548.jpeg-637x586.webp" " alt="
+                Bolo" height="250">
+            <p>20 de novembro de 2023</p>
+            <p><b>Bolo de chocolate <br> com recheio de Ninho</b></p>
+        </div>
+        <div>
+            <img src="https://pepechocolates.com.br/wp-content/uploads/2023/11/bolo-de-chocolate-com-aveia-730x548.jpeg-637x586.webp"
+                height="250">
+            <p>20 de novembro de 2023</p>
+            <p><b>Bolo de chocolate <br> com aveia</b></p>
+        </div>
+        <div>
+            <img src="https://pepechocolates.com.br/wp-content/uploads/2023/11/bolo-de-chocolate-com-banana-facil-00-730x548.jpg-637x586.webp"
+                height="250">
+            <p>20 de novembro de 2023</p>
+            <p><b>Bolo de chocolate <br> com banana</b></p>
+        </div>
+    </div>
+    <div class="tit2">
+        <h1>PEPE Chocolates</h1>
+        <h1>Prove Essa Delícia!</h1>
+    </div>
+    <br>
+    <br>
+    <div class="org">
+        <div>
+            <li>Produtos</li>
+            <ol>
+                <li>Chá de Chocolate</li>
+                <li>Chocolates</li>
+                <li>Manteigas e Cremes</li>
+                <li>Cookies</li>
+                <li>Lista de Desejos</li>
+            </ol>
+        </div>
+        <div>
+            <li>A Empresa</li>
+            <ol>
+                <li>Nossa Historia</li>
+                <li>Prêmios & Mídias</li>
+                <li>Política de Privacidade</li>
+                <li>Termos e Condições</li>
+            </ol>
+        </div>
+        <div>
+            <li>Suporte</li>
+            <ol>
+                <li>Centro de ajuda</li>
+                <li>Trocas e Devoluções</li>
+                <li>Frete e Envio</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

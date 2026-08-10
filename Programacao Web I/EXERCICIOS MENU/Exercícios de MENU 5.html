@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de MENU 5</title>
+    <style>
+        .container{
+            background-color: #EEEEEE;
+            display: flex;
+            flex-direction: column;
+        }
+        .container div:hover{
+            background-color: #DDDDDD;
+        }
+        .container div{
+            padding: 10px;
+            border: solid white;
+        }
+        .container div::before {
+            content: '• ';
+            color: #3498db;
+        }        
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div>Dashboard</div>
+        <div>Users</div>
+        <div>Settings</div>
+        <div>Logout</div>
+   </div>
+</body>
+</html>

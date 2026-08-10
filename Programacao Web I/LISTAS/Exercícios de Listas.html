@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Listas</title>
+    <style>
+        .l1{
+            list-style-type: lower-alpha;
+        }
+        .l2{
+            list-style-type: square;
+        }
+        .l3{
+            list-style-type: lower-roman;
+        }
+        .l4{
+            list-style-image: url("seta.gif");
+        }
+        .l5{
+            list-style-type: lower-greek;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Primeiro termo da lista ordenada</li>
+            <ol class="l1">
+                <li>Primeiro item da lista ordenada interna</li>
+                <li>Segundo item da lista ordenada interna</li>
+                <li>Terceiro item da lista ordenada interna</li>
+            </ol>
+        <li>Segundo termo da lista ordenada</li>
+            <ul class="l2">
+                <li>Primero item da lista não ordenada contida no segundo termo da lista ordenada</li>
+                <li>Segundo item da lista não ordenada contida no segundo termo da lista ordenada</li>
+            </ul>
+        <li>Terceiro termo da lista ordenada</li>
+            <ol class="l3" start="10">
+                <li>Primeiro item da lista ordenada interna iniciando em 10</li>
+                <li>Segundo item da lista ordenada interna</li>
+                <li>Terceiro item da lista ordenada interna</li>
+            </ol>
+        <li>Quarto termo da lista ordenada</li>
+            <ul class="l4">
+                <li>Primeiro item da lista não ordenada utilizando imagem como marcador</li>
+                <li>Segundo item da lista não ordenada utilizando imagem como marcador</li>
+                <li>Terceiro item da lista não ordenada utilizando imagem como marcador</li>
+            </ul>
+        <li>Quinto termo da lista ordenada</li>
+            <ol class="l5">
+                <li>Primeiro item da lista ordenada interna em grego minúsculo</li>
+                <li>Segundo item da lista ordenada interna em grego minúsculo</li>
+                <li>Terceiro item da lista ordenada interna em grego minúsculo</li>
+            </ol>
+    </ol>
+</html>
