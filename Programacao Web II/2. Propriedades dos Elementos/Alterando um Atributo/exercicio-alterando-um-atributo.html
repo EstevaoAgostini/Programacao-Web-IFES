@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Prática DOM - Propriedades e Métodos</title>
+ 
+</head>
+<body>
+<h2 id="titulo">Logo do Ifes</h2>
+<img id="imagem"  src="logoIfes.png" title="Logo original"
+  width="150" flag="1">
+<br><br>
+<button onclick="alterarEstilo()">Alterar Estilo</button>
+<button id="botao" onclick="alterarComSetAttribute()">Altera Logo</button>
+<script>
+  function alterarEstilo() {
+    const titulo = document.getElementById("titulo");
+    titulo.style.color="darkgreen";
+    titulo.style.fontSize = "28px";
+    titulo.style.borderBottom = "2px solid black";
+  }
+  function alterarComSetAttribute() {
+    const imagem = document.getElementById("imagem");
+    const flag=imagem.getAttribute("flag");
+    if (flag=="1") {
+        imagem.setAttribute("src", "logoIfes2.png");
+        imagem.title=("Logo alterantivo");
+        imagem.setAttribute("flag","2");
+        document.getElementById("botao").innerHTML = "Logo 1";
+        
+
+    } else {
+        imagem.setAttribute("src", "logoIfes.png");
+        imagem.title=("Logo original");
+        imagem.setAttribute("flag","1");
+        document.getElementById("botao").innerHTML = "Logo 2";
+    }
+  }
+</script>
+
+</body>
+</html>

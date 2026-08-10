@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOM com innerHTML – Exercício Avançado</title>
+</head>
+
+<body>
+
+  <h1>DOM com innerHTML – Exercício Avançado</h1>
+
+  <!-- Bloco 1: ID -->
+  <div>
+    <h2>Bloco por ID</h2>
+    <p id="id1">Texto A</p>
+    <p id="id2">Texto B</p>
+    <p id="id3">Texto C</p>
+    <p id="resultadoId">[Resultado por ID]</p>
+    <button onclick="acaoPorId()">Modificar por ID</button>
+  </div>
+
+  <!-- Bloco 2: Name -->
+  <div>
+    <h2>Bloco por Name</h2>
+    <p name="grupoName">Nome 1</p>
+    <p name="grupoName">Nome 2</p>
+    <p name="grupoName">Nome 3</p>
+    <p name="resultadoName">[Resultado por Name]</p>
+    <button onclick="acaoPorName()">Modificar por Name</button>
+  </div>
+
+  <!-- Bloco 3: Tag -->
+  <div>
+    <h2>Bloco por Tag</h2>
+    <span>Tag A</span><br>
+    <span>Tag B</span><br>
+    <span>Tag C</span><br>
+    <span>[Resultado por Tag]</span><br>
+    <button onclick="acaoPorTag()">Modificar por Tag</button>
+  </div>
+
+  <!-- Bloco 4: Class -->
+  <div>
+    <h2>Bloco por Class</h2>
+    <div class="classe1">Classe 1</div>
+    <div class="classe1">Classe 2</div>
+    <div class="classe1">Classe 3</div>
+    <div class="resultadoClass">[Resultado por Class]</div>
+    <button onclick="acaoPorClass()">Modificar por Class</button>
+  </div>
+
+  <script>
+    function acaoPorId(){
+      document.getElementById("id1").innerHTML = "Modificado por ID";
+      document.getElementById("id3").innerHTML = document.getElementById("id2").innerHTML;
+      document.getElementById("resultadoId").innerHTML = document.getElementById("id1").innerHTML + " " + document.getElementById("id3").innerHTML;
+    }
+    function acaoPorName(){
+      const nome = document.getElementsByName("grupoName");
+      nome[0].innerHTML = "Nome Alterado"
+      nome[2].innerHTML = nome[1].innerHTML
+      document.getElementsByName("resultadoName")[0].innerHTML = nome[0].innerHTML + " " + nome[2].innerHTML;
+    }
+    function acaoPorTag(){
+      const tag = document.getElementsByTagName("span");
+      tag[0].innerHTML = "Span Modificado"
+      tag[1].innerHTML = tag[2].innerHTML;
+      tag[3].innerHTML = tag[0].innerHTML + " " + tag[2].innerHTML;
+    }
+    function acaoPorClass(){
+      const  classe = document.getElementsByClassName("classe1");
+      classe[1].innerHTML = "Classe 2 Modificada";
+      classe[2].innerHTML = classe[0].innerHTML;
+      const resultado = document.getElementsByClassName("resultadoClass");
+      resultado[0].innerHTML = classe[0].innerHTML + " " + classe[1].innerHTML + " " + classe[2].innerHTML
+    }
+  </script>
+
+</body>
+
+</html>

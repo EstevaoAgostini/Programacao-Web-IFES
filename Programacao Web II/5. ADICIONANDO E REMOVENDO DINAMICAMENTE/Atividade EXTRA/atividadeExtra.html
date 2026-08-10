@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Fixação</title>
+</head>
+
+<body>
+
+    <script>
+        function adicionarEx2() {
+            //crie o novo elemento <p> e adcione o texto ao elemento
+            const para = document.createElement("p");
+            const node = document.createTextNode("Isso é novo.");
+            para.appendChild(node);
+
+            //linha modificada do exemplo2 partindo de #p2 exigindo navegar para incluir o novo elemento
+            const element = document.getElementById("p2");
+            element.appendChild(para);
+
+            //não altere os comandos abaixo
+            bt = document.getElementById("botao");
+            bt.removeEventListener("click", adicionarEx2); // impede duplicação
+            bt.addEventListener("click", adicionarEx3);
+            bt.value = "Exemplo3";
+        }
+
+        function adicionarEx3() {
+            //crie o novo elemento <p> e adcione o texto ao elemento
+            const para = document.createElement("p");
+            const node = document.createTextNode("isso é novo 2");
+            para.appendChild(node);
+
+            const element = document.getElementById("div1");
+
+            /*para usar o insertBefore vc precisara acessar o filho de referencia
+                acesse o filho e referencia usando as propriedades de navegaçao*/
+
+            const child = document.getElementById("p1");
+            element.insertBefore(para,child);
+
+            //não altere os comandos abaixo  
+            bt = document.getElementById("botao");
+            bt.removeEventListener("click", adicionarEx3); // impede duplicação
+            bt.addEventListener("click", removerEx4);
+            bt.value = "Exemplo4";
+        }
+
+        function removerEx4() {
+            const parent = document.getElementById("div1");
+            /* para remover vc deve acessar um dos filhos do container que deseja remover
+                faça isso as propriedades de navegaçao*/
+            const child = document.getElementById("p1");
+            const child2 = parent.firstElementChild;
+            parent.removeChild(child2);
+
+            //não altere os comandos abaixo
+            bt = document.getElementById("botao");
+            bt.removeEventListener("click", removerEx4); // impede duplicação
+            bt.addEventListener("click", adicionarEx2);
+            bt.value = "Exemplo2";
+        }
+
+        //função abaixo não precisa ser modificada
+        window.onload = function () {
+            const bt = document.getElementById("botao");
+            bt.addEventListener("click", adicionarEx2);
+        };
+    </script>
+
+    <h2>Exercício de Fixação</h2>
+
+    <div id="div1">
+        <p id="p1">Este é um parágrafo.</p>
+        <p id="p2">Este é outro parágrafo.</p>
+    </div>
+    <input type="button" id="botao" value="Exemplo2">
+</body>
+
+</html>

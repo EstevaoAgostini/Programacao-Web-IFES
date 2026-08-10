@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício - Estilização com JavaScript</title>
+    <style>
+        #area {
+            width: 250px;
+            height: 150px;
+            margin: auto;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Área de Estilização</h2>
+
+    <div id="area">Conteúdo</div>
+
+    <br>
+
+    <button onclick="aplicarEstilo1()">Estilo 1</button>
+    <button onclick="aplicarEstilo2()">Estilo 2</button>
+    <button onclick="aplicarEstilo3()">Estilo 3</button>
+    <button onclick="resetarEstilo()">Resetar</button>
+
+    <script>
+        function aplicarEstilo1() {
+            // Estilo com fundo azul e fonte branca
+            var estilo1 = document.getElementById("area");
+            estilo1.style.background = "blue";
+            estilo1.style.color = "white";
+        }
+
+        function aplicarEstilo2() {
+            // Estilo com borda, sombra e arredondamento
+            var estilo2 = document.getElementById("area");
+            estilo2.style.border = "solid red 5px";
+            estilo2.style.borderRadius = "20px";
+            estilo2.style.boxShadow = "10px 10px 10px black";
+        }
+
+        function aplicarEstilo3() {
+            // Estilo de texto: cor, tamanho e alinhamento
+            var estilo3 = document.getElementById("area");
+            estilo3.style.color = "yellow";
+            estilo3.style.fontSize = "30px";
+            estilo3.style.textAlign = "end"
+        }
+
+        function resetarEstilo() {
+            // Remove todas as personalizações
+            document.getElementById("area").removeAttribute("style")
+        }
+    </script>
+
+</body>
+
+</html>
