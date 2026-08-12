@@ -21,7 +21,6 @@ h1 {
     color: #444;
 }
 
-/* Fieldsets */
 fieldset {
     border: none;
     padding: 0;
@@ -38,7 +37,6 @@ legend {
     color: #666;
 }
 
-/* Bolinhas verdes dos títulos */
 legend::before {
     display: flex;
     align-items: center;
@@ -60,7 +58,6 @@ fieldset:last-of-type legend::before {
     content: "2";
 }
 
-/* Labels */
 label {
     display: block;
     margin-bottom: 4px;
@@ -68,7 +65,6 @@ label {
     color: #777;
 }
 
-/* Campos de texto */
 input, textarea, select {
     width: 100%;
     box-sizing: border-box;
@@ -80,7 +76,6 @@ input, textarea, select {
     font-size: 11px;
 }
 
-/* Radio e checkbox */
 input[type="radio"], input[type="checkbox"] {
     display: inline-block;
     width: auto;
@@ -95,7 +90,6 @@ input[type="radio"]+label, input[type="checkbox"]+label {
     vertical-align: middle;
 }
 
-/* Botão */
 input[type="submit"] {
     display: block;
     width: 100%;
