@@ -69,9 +69,7 @@ label {
 }
 
 /* Campos de texto */
-input,
-textarea,
-select {
+input, textarea, select {
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -83,16 +81,14 @@ select {
 }
 
 /* Radio e checkbox */
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     display: inline-block;
     width: auto;
     margin: 0 4px 0 0;
     vertical-align: middle;
 }
 
-input[type="radio"]+label,
-input[type="checkbox"]+label {
+input[type="radio"]+label, input[type="checkbox"]+label {
     display: inline-block;
     margin: 0;
     font-size: 10px;
