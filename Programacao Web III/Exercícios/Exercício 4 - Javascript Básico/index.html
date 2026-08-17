@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 – Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+<body>
+    <div class="container">
+        <h1>Lista de Exercícios 1 - JavaScript</h1>
+    </div>
+    <br>
+    <!--Exercıcio 1 – Lanche Vitalıcio-->
+    <div class="container">
+        <h2>Exercício 1 – Lanche Vitalício</h2>
+
+        <label for="idadeAtual">Idade atual:</label>
+        <input id="idadeAtual" type="text">
+
+        <label for="idadeMaxima">Idade máxima esperada:</label>
+        <input id="idadeEsperada" type="text">
+
+        <label for="lanchesPorDia">Lanches por dia:</label>
+        <input id="lanchesPorDia" type="text">
+
+        <button onclick="calcularLanches()">Calcular</button>
+
+        <br>
+        <br>
+        <textarea id="resultado"></textarea>
+    </div>
+    <br>
+    <!--Exercıcio 2 – Propriedades de um Cırculo-->
+    <div class="container">
+        <h2>Exercício 2 – Propriedades de um Círculo</h2>
+
+        <label for="raioCirculo">Informe o raio do círculo:</label>
+        <input id="raioCirculo" type="text">
+
+        <button onclick="calcularCircunferencia()">Calcular</button>
+        <textarea id="resultado2"></textarea>
+    </div>
+    <br>
+    <!--Exercıcio 3 – Tradutor de Ola Mundo-->
+    <div class="container">
+        <h2>Exercício 3 – Tradutor de Olá Mundo</h2>
+
+        <label for="escolhaIdioma">Escolha o idioma:</label>
+        <select id="escolhaIdioma">
+            <option id="pt" value="pt">Português</option>
+            <option id="en" value="en">Inglês</option>
+            <option id="es" value="es">Espanhol</option>
+            <option id="fr" value="fr">Francês</option>
+            <option id="it" value="it">Italiano</option>
+        </select>
+
+        <button onclick="traduzirIdioma()">Traduzir</button>
+        <textarea id="resultado3"></textarea>
+    </div>
+    <br>
+    <!--Exercıcio 4 – Impressao de Padrao-->
+    <div class="container">
+        <h2>Exercício 4 – Impressão de Padrão</h2>
+
+        <label for="gerarPadrao"></label>
+        <button onclick="gerarPadrao()">Gerar Padrão</button>
+        <label for="gerarPadrao">Ao clicar no botão, o padrão será exibido abaixo:</label>
+        <div>
+            <pre id="resultado4"></pre>
+        </div>
+    </div>
+    <br>
+    <!--Exercıcio 5 – Array de Escolhas-->
+    <div class="container">
+        <h2>Exercício 5 - Array de Escolhas</h2>
+
+        <label for="arrayEscolhas">Ao clicar no botão, o programa exibirá frases com base em um array de
+            escolhas.</label>
+        <button onclick="arrayEscolhas()">Exercutar</button>
+        <textarea id="resultado5"></textarea>
+    </div>
+    <br>
+    <!--Exercıcio 6 – Map com Quadrados de Valores-->
+    <div class="container">
+        <h2>Exercício 6 – Map com Quadrados de Valores</h2>
+
+        <label for="quadrados">Imprima o quadrado de cada número do array [1, 2, 3, 4, 5]</label>
+        <button onclick="quadrados()">Exercutar</button>
+        <textarea id="resultado6"></textarea>
+    </div>
+    <br>
+    <!--Exercıcio 7 – Conversao para Numeros Romanos-->
+    <div class="container">
+        <h2>Exercício 7 – Conversão para Números Romanos</h2>
+
+        <label for="numero">Digite um número (1 a 10)</label>
+        <input type="text" id="numero">
+
+        <button onclick="romanos()">Converter</button>
+        <textarea id="resultado7"></textarea>
+    </div>
+</body>
+</html>
