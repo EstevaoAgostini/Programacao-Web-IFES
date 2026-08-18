@@ -18,7 +18,7 @@ body {
 input, select {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
+    margin: 10px;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid #bbb;

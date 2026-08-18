@@ -35,13 +35,11 @@
     <div class="container">
         <h2>3 – Tradutor de Olá Mundo</h2>
 
-        <label for="escolhaIdioma">Escolha o idioma:</label>
         <select id="escolhaIdioma">
-            <option id="pt" value="pt">Português</option>
-            <option id="en" value="en">Inglês</option>
-            <option id="es" value="es">Espanhol</option>
+            <option value="" disabled selected>Escolha o idioma:</option>
             <option id="fr" value="fr">Francês</option>
-            <option id="it" value="it">Italiano</option>
+            <option id="es" value="es">Espanhol</option>
+            <option value="outro">Outro</option>
         </select>
 
         <button onclick="traduzirIdioma()">Traduzir</button>
@@ -51,7 +49,6 @@
     <div class="container">
         <h2>4 – Impressão de Padrão</h2>
 
-        <label for="gerarPadrao"></label>
         <button onclick="gerarPadrao()">Gerar Padrão</button>
     </div>
 </body>
