@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: whitesmoke;
+    background-color: #27a99d;
     margin: 0;
     padding: 40px;
 }
@@ -21,6 +21,7 @@ input, select {
     margin: 10px;
     box-sizing: border-box;
     border: none;
+    background-color: transparent;
     border-bottom: 1px solid #bbb;
 }
 
