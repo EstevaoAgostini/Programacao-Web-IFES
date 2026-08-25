@@ -12,8 +12,15 @@ function escolhas() {
 
 //Atividade 2
 function quadrado() {
-    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-    const quadrados = numeros.map(function (numero) { return numero ** 2 })
+    const numeros = []
+    let tamanhoLista = 11
+
+    for (let i = 0; i < tamanhoLista; i++) {
+        let numero = Math.floor(Math.random() * 100) 
+        numeros.push(numero)
+    }
+
+    const quadrados = numeros.map(function (numero) { return Math.pow(numero, 2) })
     let resultado = document.getElementById("quadrado")
 
     resultado.value = ""
@@ -25,16 +32,23 @@ function quadrado() {
 
 //Atividade 3
 function romanos() {
-    const listaNumeros = [1,2,3,4,5,6,7,8,9,10,11];
-    const valores = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-    const romanos = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+    const listaNumeros = []
+    let tamanhoLista = 11
 
-    let resultado = document.getElementById("romano");
-    resultado.value = "";
+    for (let i = 0; i < tamanhoLista; i++) {
+        let numero = Math.floor(Math.random() * 100)
+        listaNumeros.push(numero)
+    }
+    
+    const valores = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    const romanos = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+
+    let resultado = document.getElementById("romano")
+    resultado.value = ""
 
     for (let j = 0; j < listaNumeros.length; j++) {
-        let numeroAtual = listaNumeros[j];
-        let textoRomano = "";
+        let numeroAtual = listaNumeros[j]
+        let textoRomano = ""
 
         for (let i = 0; i < valores.length; i++) {
             while (numeroAtual >= valores[i]) {
@@ -43,6 +57,6 @@ function romanos() {
             }
         }
 
-        resultado.value += `${listaNumeros[j]} em romano é: ${textoRomano}\n`;
+        resultado.value += `${listaNumeros[j]} em romano é: ${textoRomano}\n`
     }
 }
