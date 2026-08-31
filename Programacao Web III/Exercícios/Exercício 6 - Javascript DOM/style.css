@@ -27,7 +27,7 @@ p {
 }
 
 .containerAluno {
-    height: 400px;
+    height: auto;
     margin: 20px auto;
     padding: 20px;
     width: 90%;
@@ -39,7 +39,7 @@ p {
 }
 
 .containerProfessor {
-    height: 400px;
+    height: auto;
     margin: 20px auto;
     padding: 20px;
     width: 90%;
