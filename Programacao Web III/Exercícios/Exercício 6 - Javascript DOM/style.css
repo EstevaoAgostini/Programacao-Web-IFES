@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+p {
+    background-color: #eaffea;
+    border: 2px solid #00cc00;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.botao {
+    width: 150px;
+    padding: 40px;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 12px;
+    border: 2px solid #b3e0f2;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #e6f7ff;
+}
+
+.containerAluno {
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fefef5;
+    border: 1px solid #b6ec9c;
+    border-radius: 8px;
+    display: none;
+}
+
+.containerProfessor {
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #FDF6F3;
+    border: 1px solid #EAB29C;
+    border-radius: 8px;
+    display: none;
+}
