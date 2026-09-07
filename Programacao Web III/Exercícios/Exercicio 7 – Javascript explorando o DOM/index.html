@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 7 – Javascript explorando o DOM</title>
+    <title>Exercício 7 - Javascript explorando o DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+
+    <div class="menuSuperior">
+        <button id="btnMenu">Menu</button>
+    </div>
+
+    <ul id="menuLista">
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+    </ul>
+
+    <div class="container">
+        <div class="areaLogin">
+            <h1 class="tituloLogin">Login</h1>
+
+            <form id="formLogin" novalidate>
+                <div class="campo">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario">
+                    <div class="msgErro" id="erroUsuario"></div>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                    <div class="msgErro" id="erroSenha"></div>
+                </div>
+
+                <button type="submit" id="btnAutenticar">Autenticar</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </div>
+
 </body>
+
 </html>
