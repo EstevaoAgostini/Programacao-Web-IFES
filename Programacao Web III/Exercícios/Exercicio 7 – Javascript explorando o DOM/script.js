@@ -1,66 +1,45 @@
-// ===== Menu dropdown =====
-var btnMenu = document.getElementById('btnMenu');
-var menuLista = document.getElementById('menuLista');
+var btnMenu = document.getElementById('btnMenu')
+var menuLista = document.getElementById('menuLista')
 
-btnMenu.addEventListener('click', function () {
-    menuLista.classList.toggle('aberto');
-});
+btnMenu.onclick = function() {
+    menuLista.classList.toggle('aberto')
+};
 
-// ===== Validação do formulário de login =====
-var form = document.getElementById('formLogin');
-var campoUsuario = document.getElementById('usuario');
-var campoSenha = document.getElementById('senha');
-var erroUsuario = document.getElementById('erroUsuario');
-var erroSenha = document.getElementById('erroSenha');
-var resultado = document.getElementById('resultado');
+var form = document.getElementById('formLogin')
+var usuario = document.getElementById('usuario')
+var senha = document.getElementById('senha')
+var erroUsuario = document.getElementById('erroUsuario')
+var erroSenha = document.getElementById('erroSenha')
 
-function limparEstado(campo, msgEl) {
-    campo.classList.remove('erro', 'sucesso');
-    msgEl.textContent = '';
-}
+form.onsubmit = function(evento) {
+    evento.preventDefault()
 
-function marcarErro(campo, msgEl, texto) {
-    campo.classList.remove('sucesso');
-    campo.classList.add('erro');
-    msgEl.textContent = texto;
-}
+    usuario.classList.remove('erro', 'sucesso')
+    senha.classList.remove('erro', 'sucesso')
 
-function marcarSucesso(campo, msgEl) {
-    campo.classList.remove('erro');
-    campo.classList.add('sucesso');
-    msgEl.textContent = '';
-}
+    erroUsuario.textContent = ''
+    erroSenha.textContent = ''
 
-form.addEventListener('submit', function (evento) {
-    evento.preventDefault();
+    var valido = true
 
-    resultado.style.display = 'none';
-    limparEstado(campoUsuario, erroUsuario);
-    limparEstado(campoSenha, erroSenha);
-
-    var usuario = campoUsuario.value.trim();
-    var senha = campoSenha.value.trim();
-    var valido = true;
-
-    // Usuário não preenchido
-    if (usuario === '') {
-        marcarErro(campoUsuario, erroUsuario, 'Usuário deve ser preenchido!');
-        valido = false;
+    if (usuario.value.trim() == '') {
+        usuario.classList.add('erro')
+        erroUsuario.textContent = 'Usuário deve ser preenchido!'
+        valido = false
     }
 
-    // Senha não preenchida
-    if (senha === '') {
-        marcarErro(campoSenha, erroSenha, 'Senha deve ser preenchida');
-        valido = false;
-    } else if (senha.length < 6 || senha.length > 30) {
-        // Senha preenchida, mas fora do tamanho permitido
-        marcarErro(campoSenha, erroSenha, 'Senha deve ter entre 6 a 30 caracteres');
-        valido = false;
+    if (senha.value.trim() == '') {
+        senha.classList.add('erro')
+        erroSenha.textContent = 'Senha deve ser preenchida'
+        valido = false
+    } else if (senha.value.length < 6 || senha.value.length > 30) {
+        senha.classList.add('erro')
+        erroSenha.textContent = 'Senha deve ter entre 6 e 30 caracteres'
+        valido = false
     }
 
     if (valido) {
-        marcarSucesso(campoUsuario, erroUsuario);
-        marcarSucesso(campoSenha, erroSenha);
-
+        usuario.classList.add('sucesso')
+        senha.classList.add('sucesso')
     }
-});
+};
