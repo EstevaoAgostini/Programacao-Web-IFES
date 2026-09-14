@@ -1,0 +1,23 @@
+.accordion-cabecalho {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid gray 1px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.active, .accordion-cabecalho:hover {
+    background-color: #ccc;
+}
+
+.accordion-conteudo {
+    cursor: alias;
+    width: 100%;
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    border: solid gray 1px;
+}
