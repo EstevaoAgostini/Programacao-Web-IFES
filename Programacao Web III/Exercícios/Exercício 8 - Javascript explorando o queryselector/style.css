@@ -21,3 +21,9 @@
     background-color: white;
     border: solid gray 1px;
 }
+
+div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
