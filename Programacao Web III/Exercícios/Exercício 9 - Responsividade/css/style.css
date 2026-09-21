@@ -1,24 +1,111 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(185, 185, 252);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, footer {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+/*Celular*/
+
+header,
+footer {
     background-color: yellow;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
-    background-color: bisque;
+    order: 1;
 }
 
-li {
-    background-color: aqua;
+article {
+    order: 2;
+}
+
+aside {
+    order: 3;
+}
+
+nav {
+    background-color: burlywood;
+    text-align: center;
+    padding: 20px 10px;
 }
 
 article {
     background-color: lightgreen;
+    padding: 20px 10px;
+}
+
+article h1 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 aside {
     background-color: gray;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu li {
+    background-color: lightblue;
+    color: #fff;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*Tablet*/
+@media (min-width: 486px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 35%;
+    }
+
+    article {
+        width: 65%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+/*Computador*/
+@media (min-width: 692px) {
+    section {
+        flex-wrap: nowrap;
+    }
+
+    nav,
+    article,
+    aside {
+        width: auto;
+        flex: 1;
+    }
 }
