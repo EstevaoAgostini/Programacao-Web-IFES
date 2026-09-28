@@ -1,11 +1,42 @@
-/* Esconde a imagem por default */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
 .meuSlide {
     display: none;
 }
 
-/* botões proximo e anterior */
-.anterior,
-.proximo {
+img {
+    width: 100%;
+}
+
+.rotulo {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.numero {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.anterior, .proximo {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -20,22 +51,19 @@
     user-select: none;
 }
 
-/* Posição do botão próximo */
 .anterior {
+    left: 0;
+}
+
+.proximo {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* formatação do número */
-.numero {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.anterior:hover, .proximo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* animação da imagem */
 .desaparecer {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -43,14 +71,10 @@
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
-}
-
-img {
-    width: 100%;
 }
